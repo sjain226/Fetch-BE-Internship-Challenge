@@ -1,0 +1,32 @@
+1)For this coding assignment I used the programming language Python and framework Flask.
+  Python is user friendly and easily readable making it easier to choose for this assignment 
+  to build REST API. It has a large number of libraries and frameworks available to work with.
+  Flask is a framework in Python which helped to handle HTTP requests making
+  it suitable for the following assignment.
+  I used VS Code as an IDE as I am comfortable using it and have worked with it before.
+  It offers a lot of python extensions and is easy to navigate. It's built in terminal makes it easy
+  to run, debug and test code and works well with errors.
+
+2)Advantages:
+  Using python made my solution reader friendly and is pretty straightforward. I made unit test cases
+  to understand how the code works and if another user wants to make changes, it will through error if something is not 
+  done right by navigating through the test.py file. 
+  Disadvantages:
+  This solution relies on single user data entry given at once and in-memory data attributes. 
+  When we restart the code and run it, it will return an empty array always and 
+  forget the previous changes made. 
+
+3)I had an opportunity to contribute to a Post Stroke Recovery Application which used
+  gamification techniques to aid stroke victims. We, as a team, modified the UI/UX of the application based 
+  on 30 unique customer feedbacks after the first run. This was officially my first time working
+  in a team and I got introduced to understanding the value of constructive conflict resolution and
+  data driven decision making. The time I used conflict resolution was when we were trying to develop a 
+  user authentication system and two team members favored breaking down the tasks like user name, password, etc, while
+  another two, including me, favored monolithic approach. I argued that monolithic approach 
+  would be simpler to implement and help us deliver on time whereas the other two members 
+  believed that their approach would increase the stability. After communicating the needs and point of views,
+  data-driven decision, cost-benefit analysis and comprises, we decided to start with monolithic
+  approach to meet with the project's tight deadline and when the system grew and needed scalability, we would shift to
+  me and my fellow mate's approach. To encapsulate, this was my first time dealing with a product issue
+  professionally and it helped me think of the ways we could come to a collective solution without overpowering anyone else's 
+  input. This helped me understand the importance of team work and flexibility in a work space.
