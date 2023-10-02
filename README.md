@@ -23,8 +23,8 @@ Example Response:
 { "payer": "DANNON", "points": -3000 }}
 ]
 
-## Rules
-the payers points should not go in negative and if the points spent is more than the what payer has in total , a status of code 400 would be displayed with a message saying "user doesn't have enough points.".
+#### Rules
+The payers points should not go in negative, and if the points spent is more than what payer has in total , a status of code 400 would be displayed with a message saying "user doesn't have enough points.".
 
 ### Endpoint : Get Balance
 - Path: /balance
@@ -39,30 +39,30 @@ Example Response:
 ## Example
 
 ```json
-{       "/add"
+{       "after /add: {"payer" : "DANNON", "points" : 5000, "timestamp" : "2020-11-02T14:00:00Z"} "
         {
         "payer": "DANNON",
         "points": 5000,
         "timestamp": "2020-11-02T14:00:00Z"
         }
         
-        "/spend"
+        "after /spend: {"points" : 3000}"
         [
             { "payer": "DANNON", "points": -3000 }
         ]
 
-        "/balance"
+        " after /balance"
         { "DANNON": 2000}
 
 }
 ```
-Total points: 2000. 
+Total points: 2000.
 
 Breakdown:
 
 Added 5000 to DANNON, spent 3000 points, left with 2000 points so the balance shows 2000.
 
-## Running the program 
+## Running the program
 Requires Flask, virtual env and Postman to be installed.
 
 - Install virtual env using : pip install virtualenv and activate using : source env/bin/activate  (macOS)
