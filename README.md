@@ -6,6 +6,7 @@ Built  REST API to keep track of points and transactions like add, spend and bal
 - Path: /add
 - Method: POST
 - Description: Adds the payer name, points added and timestamp for when the transaction takes place. A successful additon will give a status of code 200.
+
 Example body:
 {"payer" : "DANNON", "points" : 5000, "timestamp" : "2020-11-02T14:00:00Z"}
 
