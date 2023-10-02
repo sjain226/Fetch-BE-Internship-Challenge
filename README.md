@@ -66,8 +66,6 @@ Requires Flask, virtual env and Postman to be installed.
 - Install virtual env using : pip install virtualenv and activate using : source env/bin/activate  (macOS)
 - Once in virtualenv, install flask using: pip install flask
 - To run on 8000 port, use: flask run -h localhost -p 8000
-- Import the project on Postman.
-
 - Once the application is running we can make the following POST requests and GET requests using curl on Postman. Import the commands onto the project file and click send on Postman.
 
 /add: curl -X POST -H "Content-Type: application/json" -d '{"payer": "DANNON", "points": 5000, "timestamp": "2020-11-02T14:00:00Z"}' http://localhost:8000/add
