@@ -39,21 +39,19 @@ Example Response:
 ## Example
 
 ```json
-{       "after /add: { 'payer' : 'DANNON', 'points' : 5000, 'timestamp' : '2020-11-02T14:00:00Z' " }
+{
+        "after /add: { 'payer' : 'DANNON', 'points' : 5000, 'timestamp' : '2020-11-02T14:00:00Z' } "
         {
-        "payer": "DANNON",
-        "points": 5000,
-        "timestamp": "2020-11-02T14:00:00Z"
+            "payer": "DANNON",
+            "points": 5000,
+            "timestamp": "2020-11-02T14:00:00Z"
         }
-
         "after /spend: {'points' : 3000}"
         [
             { "payer": "DANNON", "points": -3000 }
         ]
-
         " after /balance"
         { "DANNON": 2000}
-
 }
 ```
 Total points: 2000.
