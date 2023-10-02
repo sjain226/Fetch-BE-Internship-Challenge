@@ -23,16 +23,22 @@ def spend():
     data = request.json
     points_spent = data['points']
     result = []
+    total_balance = 0
     sort = sorted(transactions, key=lambda x: x['timestamp'])
+    for transaction in sort:
+        total_balance += transaction['points']
+
+    if total_balance < points_spent:
+        return 'User does not have enough points', 400
 
     for transaction in sort:
         payer = transaction['payer']
         points = transaction['points']
 
-        if points_spent <= 0:
+        if points_spent == 0:
             break
 
-        if balances.get(payer, 0) >= 0:
+        if balances.get(payer, 0) > 0:
             spent = min(points_spent, points)
             balances[payer] -= spent
             points_spent -= spent
