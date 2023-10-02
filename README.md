@@ -14,6 +14,7 @@ Example body:
 - Path: /spend
 - Method: POST
 - Description: Points deducted from a payer based on the oldest transaction timestamp to exist. Succesful spend will respond with status of code 200.
+
 Example body: 
 {"points" : 3000}
 
@@ -38,7 +39,7 @@ Example Response:
 ## Example
 
 ```json
-{
+{       "/add"
         {
         "payer": "DANNON",
         "points": 5000,
@@ -55,7 +56,11 @@ Example Response:
 
 }
 ```
-Total points: 2000. Added 5000 to DANNON, spent 3000 points, left with 2000 points so the balance shows 2000.
+Total points: 2000. 
+
+Breakdown:
+
+Added 5000 to DANNON, spent 3000 points, left with 2000 points so the balance shows 2000.
 
 ## Running the program 
 Requires Flask, virtual env and Postman to be installed.
@@ -68,7 +73,9 @@ Requires Flask, virtual env and Postman to be installed.
 - Once the application is running we can make the following POST requests and GET requests using curl on Postman. Import the commands onto the project file and click send on Postman.
 
 /add: curl -X POST -H "Content-Type: application/json" -d '{"payer": "DANNON", "points": 5000, "timestamp": "2020-11-02T14:00:00Z"}' http://localhost:8000/add
+
 /spend: curl -X POST -H "Content-Type: application/json" -d '{"points": 5000}' http://localhost:8000/spend
+
 /balance: curl http://localhost:8000/balance
 
 
